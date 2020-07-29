@@ -1,7 +1,7 @@
 package com.github.ndiaz.ftp.impl;
 
 import com.github.ndiaz.ftp.FtpClient;
-import com.github.ndiaz.ftp.config.FtpClientConfiguration;
+import com.github.ndiaz.ftp.config.FtpClientConfig;
 import com.github.ndiaz.ftp.exception.FtpException;
 import com.github.ndiaz.ftp.model.FtpFile;
 import java.io.ByteArrayInputStream;
@@ -17,9 +17,9 @@ import org.apache.commons.lang3.StringUtils;
 @Slf4j
 public abstract class GenericFtpClient implements FtpClient {
 
-  protected FtpClientConfiguration configuration;
+  protected FtpClientConfig configuration;
 
-  public GenericFtpClient(final FtpClientConfiguration configuration) {
+  public GenericFtpClient(final FtpClientConfig configuration) {
     this.configuration = configuration;
   }
 

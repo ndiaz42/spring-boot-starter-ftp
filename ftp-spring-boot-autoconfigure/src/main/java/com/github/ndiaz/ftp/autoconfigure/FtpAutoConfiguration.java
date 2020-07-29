@@ -21,7 +21,7 @@ public class FtpAutoConfiguration {
   @Bean
   @ConditionalOnMissingBean
   public FtpFactory ftpFactory() {
-    return new FtpFactory();
+    return new FtpFactory(properties.getClients());
   }
 
 }

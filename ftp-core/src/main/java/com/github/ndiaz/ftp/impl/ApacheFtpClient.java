@@ -1,6 +1,6 @@
 package com.github.ndiaz.ftp.impl;
 
-import com.github.ndiaz.ftp.config.FtpClientConfiguration;
+import com.github.ndiaz.ftp.config.FtpClientConfig;
 import com.github.ndiaz.ftp.exception.FtpException;
 import com.github.ndiaz.ftp.model.FtpFile;
 import java.io.ByteArrayInputStream;
@@ -27,7 +27,7 @@ public class ApacheFtpClient extends GenericFtpClient {
 
   private final FTPClient client;
 
-  public ApacheFtpClient(final FtpClientConfiguration configuration) {
+  public ApacheFtpClient(final FtpClientConfig configuration) {
     super(configuration);
     final FTPClientConfig config = new FTPClientConfig();
     config.setServerTimeZoneId(TimeZone.getTimeZone("UTC").getID());

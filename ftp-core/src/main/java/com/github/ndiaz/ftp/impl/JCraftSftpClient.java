@@ -1,6 +1,6 @@
 package com.github.ndiaz.ftp.impl;
 
-import com.github.ndiaz.ftp.config.FtpClientConfiguration;
+import com.github.ndiaz.ftp.config.FtpClientConfig;
 import com.github.ndiaz.ftp.exception.FtpException;
 import com.github.ndiaz.ftp.model.FtpFile;
 import com.jcraft.jsch.ChannelSftp;
@@ -27,7 +27,7 @@ public class JCraftSftpClient extends GenericFtpClient {
   private Session session;
   private ChannelSftp channel;
 
-  public JCraftSftpClient(final FtpClientConfiguration configuration) {
+  public JCraftSftpClient(final FtpClientConfig configuration) {
     super(configuration);
   }
 
