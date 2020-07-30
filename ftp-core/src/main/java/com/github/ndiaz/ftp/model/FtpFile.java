@@ -3,6 +3,9 @@ package com.github.ndiaz.ftp.model;
 import java.time.LocalDateTime;
 import lombok.Data;
 
+/**
+ * Class that represents a file from a FTP server (uploaded or downloaded).
+ */
 @Data
 public class FtpFile {
 
